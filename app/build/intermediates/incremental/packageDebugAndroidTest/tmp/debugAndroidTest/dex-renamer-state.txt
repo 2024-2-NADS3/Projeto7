@@ -1,0 +1,10 @@
+#Thu Oct 17 22:09:42 BRT 2024
+base.0=C\:\\Users\\mauri\\PM\\riddle_beta7.0(background_sound_fixx)\\app\\build\\intermediates\\dex\\debugAndroidTest\\mergeExtDexDebugAndroidTest\\classes.dex
+base.1=C\:\\Users\\mauri\\PM\\riddle_beta7.0(background_sound_fixx)\\app\\build\\intermediates\\dex\\debugAndroidTest\\mergeProjectDexDebugAndroidTest\\0\\classes.dex
+base.2=C\:\\Users\\mauri\\PM\\riddle_beta7.0(background_sound_fixx)\\app\\build\\intermediates\\dex\\debugAndroidTest\\mergeProjectDexDebugAndroidTest\\10\\classes.dex
+path.0=classes.dex
+path.1=0/classes.dex
+path.2=10/classes.dex
+renamed.0=classes.dex
+renamed.1=classes2.dex
+renamed.2=classes3.dex

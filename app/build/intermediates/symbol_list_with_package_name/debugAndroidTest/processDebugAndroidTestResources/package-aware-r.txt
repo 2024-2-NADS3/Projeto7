@@ -1,0 +1,3 @@
+com.example.riddle_beta1_definited.test
+style WhiteBackgroundDialogTheme
+style WhiteBackgroundTheme
