@@ -1,7 +1,7 @@
 # FECAP - Fundação de Comércio Álvares Penteado
 
 <p align="center">
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhZPrRa89Kma0ZZogxm0pi-tCn_TLKeHGVxywp-LXAFGR3B1DPouAJYHgKZGV0XTEf4AE&usqp=CAU](https://br.pinterest.com/pin/815292338784016068/)](https://br.pinterest.com/pin/36169603252131634/)" alt="FECAP - Fundação de Comércio Álvares Penteado" border="0"></a>
+<img src="https://br.pinterest.com/pin/36169603252131634/" alt="FECAP - Fundação de Comércio Álvares Penteado" border="0"></a>
 </p>
 
 # Riddle Me This
