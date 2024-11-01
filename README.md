@@ -15,7 +15,7 @@
 ## Descrição
 
 <p align="center">
-<img src="https://i.pinimg.com/564x/9d/d7/a8/9dd7a830b7f6859ee37bd0cf36776ccc.jpg" alt="Riddle Me This" border="0">
+<img src="file:///C:/Users/Ryan/Downloads/WhatsApp%20Image%202024-10-31%20at%2022.18.33.jpeg" alt="Riddle Me This" border="0">
 </p>
 
 
