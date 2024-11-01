@@ -4,7 +4,7 @@
 <img src="https://i.pinimg.com/564x/f6/d4/da/f6d4dab815c264a927a02eb14b6f5976.jpg" alt="FECAP - Fundação de Comércio Álvares Penteado" border="0"></a>
 </p>
 
-# Riddle Me This
+# Riddle Me 
 
 ## Grupo 7
 
@@ -22,9 +22,9 @@
 
 De um a dois parágrafos sobre o que é seu projeto e o que ele faz.
 <br><br>
-Meu projeto ajuda estudantes FECAP a configurarem seus githubs.
+Quiz educativo sobre ODS com níveis, perfil do usuário e layout inspirado no Charada. Meu projeto ajuda estudantes de todas as instituiçôes de ensino a aprenderem um pouco mais sobre a importancia dos Objetivos de Desenvolvimento Sustentável(ODs), de forma que o aprendizado seja leve e lúdico
 <br><br>
-May the force be with you!
+Boa sorte e "Desvende-me"!
 <br><br>
 
 ## 🛠 Estrutura de pastas
