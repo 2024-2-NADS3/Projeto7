@@ -1,14 +1,14 @@
 # FECAP - Fundação de Comércio Álvares Penteado
 
 <p align="center">
-<img src="[https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhZPrRa89Kma0ZZogxm0pi-tCn_TLKeHGVxywp-LXAFGR3B1DPouAJYHgKZGV0XTEf4AE&usqp=CAU](https://br.pinterest.com/pin/815292338784016068/)" alt="FECAP - Fundação de Comércio Álvares Penteado" border="0"></a>
+<img src="[[https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhZPrRa89Kma0ZZogxm0pi-tCn_TLKeHGVxywp-LXAFGR3B1DPouAJYHgKZGV0XTEf4AE&usqp=CAU](https://br.pinterest.com/pin/815292338784016068/)](https://br.pinterest.com/pin/36169603252131634/)" alt="FECAP - Fundação de Comércio Álvares Penteado" border="0"></a>
 </p>
 
 # Riddle Me This
 
 ## Grupo 7
 
-## Integrantes: <a href="https://www.linkedin.com/in/ryan-oliveira-2b54092a1/">Ryan De Oliveira</a>, <a href="https://www.linkedin.com/in/kau%C3%A3-silva-rocha-0a2b0a1a5/">SKauâ Silva</a>, <a href="https://www.linkedin.com/in/filipi-pires-219331211/">Filipi Pires</a>, <a href="https://www.linkedin.com/in/jo%C3%A3o-albuquerquepeer/">Joâo Albuquerque</a>
+## Integrantes: <a href="https://www.linkedin.com/in/ryan-oliveira-2b54092a1/">Ryan De Oliveira</a>, <a href="https://www.linkedin.com/in/kau%C3%A3-silva-rocha-0a2b0a1a5/">Kauâ Silva</a>, <a href="https://www.linkedin.com/in/filipi-pires-219331211/">Filipi Pires</a>, <a href="https://www.linkedin.com/in/jo%C3%A3o-albuquerquepeer/">Joâo Albuquerque</a>
 
 ## Professores Orientadores: <a href="https://www.linkedin.com/in/victorbarq/">Dr. Victor Von Doom</a>, <a href="https://www.linkedin.com/in/victorbarq/">Me. Saitama</a>, <a href="https://www.linkedin.com/in/victorbarq/">Dr. Strange</a>, <a href="https://www.linkedin.com/in/victorbarq/">Me. Yoda</a>, <a href="https://www.linkedin.com/in/victorbarq/">Dr. Gero</a>
 
