@@ -1,0 +1,6 @@
+@RiddleMeThis_HostAddress = http://localhost:5067
+
+GET {{RiddleMeThis_HostAddress}}/ControllerUsuario/
+Accept: application/json
+
+###

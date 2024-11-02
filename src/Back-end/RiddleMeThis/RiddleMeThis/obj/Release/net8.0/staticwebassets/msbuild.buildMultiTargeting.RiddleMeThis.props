@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\RiddleMeThis.props" />
+</Project>

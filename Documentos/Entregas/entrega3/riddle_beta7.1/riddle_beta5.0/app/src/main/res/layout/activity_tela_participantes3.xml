@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TelaParticipantes3"
+    android:background="@color/corFundoTela">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="sans-serif"
+        android:text="Riddle me this"
+        android:textColor="@color/green"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.02" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.144"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.179"
+        app:srcCompat="@mipmap/filipi" />
+
+    <ImageView
+        android:id="@+id/imgJoão"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.144"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.636"
+        app:srcCompat="@drawable/joao" />
+
+    <TextView
+        android:id="@+id/textFilipi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Filipi Pires"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.072" />
+
+    <TextView
+        android:id="@+id/textJoao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="João Albuquerque"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.09"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.629" />
+
+    <LinearLayout
+        android:id="@+id/menu_inferior"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:background="@drawable/menu_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:gravity="center">
+
+        <!-- Botão esquerdo -->
+        <ImageView
+            android:id="@+id/btnDesenvolvedor"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@mipmap/desenvolvedor" />
+
+        <FrameLayout
+            android:layout_width="90dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp">
+
+            <!-- Botão Play Game -->
+            <ImageView
+                android:id="@+id/btnPlay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="mudarTelaPlay"
+                android:src="@mipmap/botaoplay"
+                app:tint="@null" />
+
+            <!-- GIF que será exibido ao selecionar uma opção -->
+            <ImageView
+                android:id="@+id/play_button_gif"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                android:src="@drawable/play_button_animation"
+                android:scaleType="fitCenter"/>
+        </FrameLayout>
+
+        <!-- Botão direito -->
+        <ImageView
+            android:id="@+id/btnUsuario"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@mipmap/usuario"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:layout_constraintBottom_toBottomOf="@+id/menu_inferior"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.832"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.184"
+        app:srcCompat="@mipmap/ryan" />
+
+    <ImageView
+        android:id="@+id/imgKaue"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:layout_constraintBottom_toBottomOf="@+id/menu_inferior"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.831"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.634"
+        app:srcCompat="@drawable/kaua" />
+
+    <TextView
+        android:id="@+id/textRyan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ryan"
+        app:layout_constraintBottom_toBottomOf="@+id/menu_inferior"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.543"
+        app:layout_constraintStart_toEndOf="@+id/textFilipi"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.068" />
+
+    <TextView
+        android:id="@+id/textKaue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kauã"
+        app:layout_constraintBottom_toBottomOf="@+id/menu_inferior"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintStart_toEndOf="@+id/textFilipi"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.625" />
+
+    <ImageView
+        android:id="@+id/btnLinkedinFilipi"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:onClick="linkLinkedinFilipi"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textRyan"
+        app:layout_constraintHorizontal_bias="0.132"
+        app:layout_constraintStart_toEndOf="@+id/textFilipi"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.436"
+        app:srcCompat="@mipmap/linkedin" />
+
+    <ImageView
+        android:id="@+id/btnLinkedinJoao"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:onClick="linkLinkedinJoao"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textKaue"
+        app:layout_constraintHorizontal_bias="0.089"
+        app:layout_constraintStart_toEndOf="@+id/textJoao"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.774"
+        app:srcCompat="@mipmap/linkedin" />
+
+    <ImageView
+        android:id="@+id/btnLinkedinKaue"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:onClick="linkLinkedinKaua"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.348"
+        app:layout_constraintStart_toEndOf="@+id/textKaue"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.774"
+        app:srcCompat="@mipmap/linkedin" />
+
+    <ImageView
+        android:id="@+id/btnLinkedinRyan"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:onClick="linkLinkedinRyan"
+        app:layout_constraintBottom_toBottomOf="@+id/menu_inferior"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.355"
+        app:layout_constraintStart_toEndOf="@+id/textRyan"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.432"
+        app:srcCompat="@mipmap/linkedin" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

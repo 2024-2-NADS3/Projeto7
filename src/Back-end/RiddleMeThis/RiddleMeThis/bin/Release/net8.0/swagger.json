@@ -1,0 +1,131 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Servidor API",
+    "version": "v1"
+  },
+  "paths": {
+    "/api/ControllerQuiz/ObterQuizAleatorio": {
+      "get": {
+        "tags": [
+          "ControllerQuiz"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "dificuldade",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Servidor/Cadastrar": {
+      "post": {
+        "tags": [
+          "Servidor"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/Usuario"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Servidor/Login": {
+      "post": {
+        "tags": [
+          "Servidor"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/UsuarioDto"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Servidor/ObterUsuario": {
+      "get": {
+        "tags": [
+          "Servidor"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "email",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "Usuario": {
+      "required": [
+        "nome"
+      ],
+      "type": "object",
+      "properties": {
+        "id": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "nome": {
+          "maxLength": 100,
+          "minLength": 1,
+          "type": "string"
+        }
+      }
+    },
+    "UsuarioDto": {
+      "required": [
+        "nome"
+      ],
+      "type": "object",
+      "properties": {
+        "nome": {
+          "maxLength": 100,
+          "minLength": 1,
+          "type": "string"
+        }
+      }
+    }
+  }
+}
