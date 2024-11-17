@@ -1,11 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Configuration;
 using MySqlConnector;
-using System.Threading.Tasks;
 using RiddleMeThis.Models;
-using RiddleMeThis.Data;
 using RiddleMeThis.Dto;
-using Microsoft.AspNetCore.Identity.Data;
+
 
 namespace RiddleMeThis.Controllers
 {
@@ -13,13 +10,14 @@ namespace RiddleMeThis.Controllers
     [ApiController]
     public class ServidorController : ControllerBase
     {
-        private readonly string _connectionString;
+        private readonly string? _connectionString;
 
         public ServidorController(IConfiguration configuration)
         {
             // Lê a string de conexão do arquivo de configuração
             _connectionString = configuration.GetConnectionString("DefaultConnection");
         }
+
 
 
         [HttpPost("Cadastrar")]
@@ -30,11 +28,11 @@ namespace RiddleMeThis.Controllers
                 return BadRequest("Nome, senha e email são obrigatórios.");
             }
 
-            using (var conn = new MySqlConnection(_connectionString))
+            var conn = new MySqlConnection(_connectionString);
             {
                 await conn.OpenAsync();
 
-                using (var command = conn.CreateCommand())
+                var command = conn.CreateCommand();
                 {
                     command.CommandText = "INSERT INTO usuario (nome) " +
                                           "SELECT @nome " +
@@ -65,16 +63,16 @@ namespace RiddleMeThis.Controllers
                 return BadRequest(new { sucesso = false, mensagem = "O nome do usuário é obrigatório." });
             }
 
-            using (var conn = new MySqlConnection(_connectionString))
+            var conn = new MySqlConnection(_connectionString);
             {
                 await conn.OpenAsync();
 
-                using (var command = conn.CreateCommand())
+                var command = conn.CreateCommand();
                 {
                     command.CommandText = "SELECT nome FROM usuario WHERE nome = @Nome";
                     command.Parameters.AddWithValue("@Nome", usuario.nome);
 
-                    using (var reader = await command.ExecuteReaderAsync())
+                    var reader = await command.ExecuteReaderAsync();
                     {
                         if (await reader.ReadAsync())
                         {
@@ -101,16 +99,16 @@ namespace RiddleMeThis.Controllers
                 return BadRequest("Email é obrigatório.");
             }
 
-            using (var conn = new MySqlConnection(_connectionString))
+            var conn = new MySqlConnection(_connectionString);
             {
                 await conn.OpenAsync();
 
-                using (var command = conn.CreateCommand())
+                ; var command = conn.CreateCommand();
                 {
                     command.CommandText = "SELECT nome FROM usuario WHERE nome = @nome;";
                     command.Parameters.AddWithValue("@email", email);
 
-                    using (var reader = await command.ExecuteReaderAsync())
+                    var reader = await command.ExecuteReaderAsync();
                     {
                         if (await reader.ReadAsync())
                         {

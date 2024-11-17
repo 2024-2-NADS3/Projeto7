@@ -9,6 +9,6 @@ namespace RiddleMeThis.Models
 
         [Required]
         [MaxLength(100)]
-        public string nome { get; set; }
+        public string? nome { get; set; }
     }
 }

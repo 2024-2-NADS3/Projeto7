@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TelaExplicaQuiz7">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:id="@+id/ContainerCarrosselPerguntas"
+                android:layout_width="match_parent"
+                android:layout_height="700dp"
+                android:background="#F4F4F4"
+                app:layout_constraintTop_toBottomOf="@id/ContainerTitulo"
+                />
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="396dp"
+                android:layout_height="217dp"
+                app:layout_constraintTop_toBottomOf="@id/ContainerTitulo"
+                tools:layout_editor_absoluteX="0dp">
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="70dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/TextoCarrosel1"
+                            android:layout_width="350dp"
+                            android:layout_height="135dp"
+                            android:layout_marginStart="25dp"
+                            android:justificationMode="inter_word"
+                            android:text="Os Objetivos de Desenvolvimento Sustentável (ODS) 1 a 4 tratam das necessidades mais básicas para a dignidade e o bem-estar humano. A ODS 1, “Erradicação da Pobreza”, busca eliminar a pobreza em todas as suas formas, garantindo que as pessoas possam satisfazer suas necessidades fundamentais, como moradia, alimentação e saúde. A ODS 2, “Fome Zero”, visa acabar com a fome e melhorar a nutrição, além de promover "
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/TextoCarrosel2"
+                            android:layout_width="350dp"
+                            android:layout_height="135dp"
+                            android:layout_marginStart="35dp"
+                            android:justificationMode="inter_word"
+                            android:textColor="@color/black"
+                            android:text="uma agricultura sustentável, essencial para a segurança alimentar. A ODS 3, “Saúde e Bem-Estar”, foca em melhorar o acesso aos serviços de saúde e combater doenças, aumentando a expectativa e a qualidade de vida da população. Por fim, o ODS 4, “Educação de Qualidade”, visa garantir a educação inclusiva e acessível, pois a educação é um dos principais caminhos para reduzir a pobreza e melhorar as oportunidades de vida. Juntas, essas metas representam um passo essencial para promover uma vida digna e equitativa" />
+
+                        <TextView
+                            android:id="@+id/TextoCarrosel3"
+                            android:layout_width="350dp"
+                            android:layout_height="130dp"
+                            android:textColor="@color/black"
+                            android:layout_marginStart="35dp"
+                            android:justificationMode="inter_word"
+                            android:text="As ODS 5 a 8 focam em questões essenciais para o desenvolvimento social e econômico sustentável. A ODS 5, “Igualdade de Gênero”, procura eliminar todas as formas de discriminação e violência contra mulheres e meninas, promovendo o empoderamento feminino. A ODS 6, Água Limpa e Saneamento, busca garantir o acesso universal e sustentável à água potável e ao saneamento, prevenindo doenças e melhorando a saúde pública." />
+
+                        <TextView
+                            android:id="@+id/TextoCarrosel4"
+                            android:layout_width="350dp"
+                            android:layout_height="130dp"
+                            android:textColor="@color/black"
+                            android:layout_marginStart="35dp"
+                            android:justificationMode="inter_word"
+                            android:text=" A ODS 7, “Energia Limpa e Acessível”, tem como objetivo fornecer acesso à energia sustentável e confiável, fundamental para o progresso econômico e a redução de emissões de carbono. A ODS 8, “Trabalho Decente e Crescimento Econômico”, promove a criação de empregos de qualidade, a proteção dos direitos dos trabalhadores e o crescimento econômico inclusivo. Essas metas incentivam uma sociedade mais justa e " />
+
+                        <TextView
+                            android:id="@+id/TextoCarrosel5"
+                            android:layout_width="350dp"
+                            android:layout_height="130dp"
+                            android:textColor="@color/black"
+                            android:layout_marginStart="35dp"
+                            android:justificationMode="inter_word"
+                            android:text="resiliente, onde o desenvolvimento é distribuído de forma igualitária, proporcionando condições dignas e seguras para todos.Os ODS 9 a 12 focam em estratégias de desenvolvimento sustentável que integram inovação, inclusão e sustentabilidade urbana.Os ODS 9 a 12 focam na promoção de um desenvolvimento sustentável por meio da inovação, inclusão e infraestrutura urbana.
+
+Sinta-se livre para saber mais clicando no botão abaixo!" />
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <WebView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <Button
+                    android:id="@+id/button9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Button" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/TextoDescrição"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:text="Descrição:"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.08"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.385"
+                />
+
+
+            <ImageButton
+                android:id="@+id/Videoeducativo"
+                android:layout_width="209dp"
+                android:layout_height="151dp"
+                android:layout_gravity="center"
+                android:background="?attr/selectableItemBackground"
+                android:contentDescription="Play Video"
+                android:onClick="linkProYoutube"
+                android:src="@drawable/play"
+                app:layout_constraintBottom_toTopOf="@+id/ContainerTitulo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/TextoPerguntasExemplos"
+                style="@style/Widget.Material3.MaterialTimePicker.Display.HelperText"
+                android:layout_width="194dp"
+                android:layout_height="40dp"
+                android:text="Para mais informaçôes, clique em SABER MAIS!"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.462"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.561" />
+
+            <View
+                android:id="@+id/ContainerTitulo"
+                android:layout_width="match_parent"
+                android:layout_height="125dp"
+                android:background="#FFFFFF"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/CapaQuizPlaceholder"
+                />
+
+            <TextView
+                android:id="@+id/TextDificuldadeQuiz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="300dp"
+                android:layout_marginTop="24dp"
+                android:text="Diversos"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TextNomeQuiz"
+                />
+
+            <ImageView
+                android:id="@+id/ImageDificuldadeQuiz"
+                android:layout_width="28dp"
+                android:layout_height="22dp"
+                android:layout_marginStart="265dp"
+                android:layout_marginTop="23dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TextNomeQuiz"
+                app:srcCompat="@drawable/brain_circuit"
+                />
+
+            <TextView
+                android:id="@+id/TextTempoQuiz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="188dp"
+                android:layout_marginTop="24dp"
+                android:text="2:26"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TextNomeQuiz"
+                />
+
+            <ImageView
+                android:id="@+id/ImageTempoQuiz"
+                android:layout_width="28dp"
+                android:layout_height="22dp"
+                android:layout_marginStart="150dp"
+                android:layout_marginTop="23dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TextNomeQuiz"
+                app:srcCompat="@drawable/time_check"
+                />
+
+            <TextView
+                android:id="@+id/TextQntPerguntasQuiz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="84dp"
+                android:layout_marginTop="24dp"
+                android:text="3"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TextNomeQuiz"
+                />
+
+            <ImageView
+                android:id="@+id/ImageQntPerguntasQuiz"
+                android:layout_width="28dp"
+                android:layout_height="22dp"
+
+                android:layout_marginStart="46dp"
+                android:layout_marginTop="23dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TextNomeQuiz"
+                app:srcCompat="@drawable/message_question"
+                />
+
+            <TextView
+                android:id="@+id/TextNomeQuiz"
+                android:layout_width="377dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="5dp"
+                android:textColor="@color/black"
+                android:text="OBJETIVOS DE DESENVOLVIMENTO SUSTENTÁVEL 📑🌍 O que são os ODS? "
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/ContainerTitulo" />
+
+            <View
+                android:id="@+id/CapaQuizPlaceholder"
+                android:layout_width="0dp"
+                android:layout_height="225dp"
+                android:background="@drawable/youtube_link"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.842"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <ImageView
+                android:id="@+id/cancelButton"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="8dp"
+                android:onClick="VoltarTela2"
+                android:src="@drawable/previous"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.022"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.039" />
+
+            <Button
+                android:id="@+id/btnSaberMais"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Saiba mais"
+                android:onClick="SaibaMais"
+                android:backgroundTint="#9E9D9D"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.105"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+                app:layout_constraintVertical_bias="0.137" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="232dp"
+                android:layout_height="241dp"
+                android:src="@drawable/mascote_ods"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.67"
+                app:layout_constraintStart_toStartOf="@+id/ContainerCarrosselPerguntas"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+                app:layout_constraintVertical_bias="0.402"
+               />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Riddle Me This?</string>
+    <string name="play_game">Botão Play Game</string>
+    <string name="TextMultiCorLoading2">
+        <font color="#A581B0">Riddle Me This</font>
+        <font color="#175">é um jogo de perguntas e respostas com Seis níveis de Dificuldades</font>
+    </string>
+    <string name="TextMultiCorLoading3">
+        <font color="#175">As perguntas são temáticas e testam seu conhecimento sobre as</font>
+        <font color="#A581B0">Ods</font>
+        <font color="#175">(Objetivo de Desenvolvimento Sustentável)</font>
+    </string>
+</resources>
+

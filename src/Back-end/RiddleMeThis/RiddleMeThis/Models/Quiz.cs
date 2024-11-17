@@ -10,10 +10,10 @@ namespace RiddleMeThis.Models
 
         [Required]
         [MaxLength(255)]
-        public string titulo { get; set; }
+        public string? titulo { get; set; }
 
         [Required]
-        public string descricao { get; set; }
+        public string? descricao { get; set; }
 
         [Required]
         public int dificuldade { get; set; }
@@ -22,9 +22,11 @@ namespace RiddleMeThis.Models
         public int pontuacao_quiz { get; set; }
 
         [Required]
-        public string imagen { get; set; }
+        public string? imagen { get; set; }
 
-        public virtual ICollection<Perguntas> Perguntas { get; set; }
 
-    } 
+        public virtual ICollection<Perguntas>? Perguntas { get; set; }
+
+
+    }
 }

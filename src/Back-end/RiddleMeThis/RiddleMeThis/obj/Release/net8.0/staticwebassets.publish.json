@@ -1,11 +1,12 @@
 {
   "Version": 1,
-  "Hash": "+ujnAYXEkJDalDvcLELfTy3vdrXPU698CE083i2MPFk=",
+  "Hash": "2BAcX/OtjixZrQ7CDseuImByadv11Tt9CpMyqSQB/4E=",
   "Source": "RiddleMeThis",
   "BasePath": "_content/RiddleMeThis",
   "Mode": "Default",
   "ManifestType": "Publish",
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [],
-  "Assets": []
+  "Assets": [],
+  "Endpoints": []
 }

@@ -2,7 +2,6 @@ using AutoMapper;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using RiddleMeThis.Data;
-using RiddleMeThis; // Certifique-se de que o namespace correto é usado para o AutoMapperUsuario
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -42,3 +41,4 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
+

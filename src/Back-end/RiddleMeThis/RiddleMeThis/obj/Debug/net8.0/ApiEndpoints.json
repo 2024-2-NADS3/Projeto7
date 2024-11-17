@@ -1,0 +1,98 @@
+[
+  {
+    "ContainingType": "RiddleMeThis.Controllers.ControllerQuiz",
+    "Method": "AtualizarQuizzesFeitos",
+    "RelativePath": "api/ControllerQuiz/AtualizarQuizzesFeitos",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "usuario",
+        "Type": "RiddleMeThis.Models.Usuario",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RiddleMeThis.Controllers.ControllerQuiz",
+    "Method": "ObterContagemQuizzesFeitos",
+    "RelativePath": "api/ControllerQuiz/ObterContagemQuizzesFeitos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "usuarioId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RiddleMeThis.Controllers.ControllerQuiz",
+    "Method": "ObterQuizAleatorio",
+    "RelativePath": "api/ControllerQuiz/ObterQuizAleatorio",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dificuldade",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RiddleMeThis.Controllers.ServidorController",
+    "Method": "Cadastrar",
+    "RelativePath": "api/Servidor/Cadastrar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "usuario",
+        "Type": "RiddleMeThis.Models.Usuario",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RiddleMeThis.Controllers.ServidorController",
+    "Method": "Login",
+    "RelativePath": "api/Servidor/Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "usuario",
+        "Type": "RiddleMeThis.Dto.UsuarioDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RiddleMeThis.Controllers.ServidorController",
+    "Method": "ObterUsuario",
+    "RelativePath": "api/Servidor/ObterUsuario",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

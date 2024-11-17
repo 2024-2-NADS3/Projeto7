@@ -1,6 +1,5 @@
 ﻿using RiddleMeThis.Dto;
 using RiddleMeThis.Models;
-using AutoMapper;
 
 namespace AutoMapper
 {

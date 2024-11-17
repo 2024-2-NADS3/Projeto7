@@ -24,6 +24,52 @@
         }
       }
     },
+    "/api/ControllerQuiz/AtualizarQuizzesFeitos": {
+      "post": {
+        "tags": [
+          "ControllerQuiz"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/Usuario"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/ControllerQuiz/ObterContagemQuizzesFeitos": {
+      "get": {
+        "tags": [
+          "ControllerQuiz"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "usuarioId",
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
     "/api/Servidor/Cadastrar": {
       "post": {
         "tags": [
@@ -116,14 +162,24 @@
     },
     "UsuarioDto": {
       "required": [
-        "nome"
+        "id",
+        "nome",
+        "quizzes_feitos"
       ],
       "type": "object",
       "properties": {
+        "id": {
+          "format": "int32",
+          "type": "integer"
+        },
         "nome": {
           "maxLength": 100,
           "minLength": 1,
           "type": "string"
+        },
+        "quizzes_feitos": {
+          "format": "int32",
+          "type": "integer"
         }
       }
     }

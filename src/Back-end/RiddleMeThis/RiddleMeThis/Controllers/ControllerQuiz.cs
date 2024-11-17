@@ -7,12 +7,14 @@ namespace RiddleMeThis.Controllers
 {
     [Route("api/[Controller]")]
     [ApiController]
-    public class ControllerQuiz :ControllerBase
+    public class ControllerQuiz : ControllerBase
     {
-        private readonly string _connectionString;
+
         private static HashSet<int> quizzesExibidos = new HashSet<int>(); // Armazena IDs dos quizzes exibidos
         private static int totalQuizzes; // Total de quizzes disponíveis
 
+
+        private readonly string? _connectionString;
         public ControllerQuiz(IConfiguration configuration)
         {
             _connectionString = configuration.GetConnectionString("DefaultConnection");
@@ -22,7 +24,7 @@ namespace RiddleMeThis.Controllers
         [HttpGet("ObterQuizAleatorio")]
         public async Task<IActionResult> ObterQuizAleatorio(string dificuldade)
         {
-            if (string.IsNullOrWhiteSpace(dificuldade) || !new[] { "1", "2", "3" }.Contains(dificuldade))
+            if (string.IsNullOrWhiteSpace(dificuldade) || !new[] { "1", "2", "3", "4", "5", "6" }.Contains(dificuldade))
             {
                 return BadRequest("Dificuldade inválida. Use 1, 2 ou 3.");
             }
@@ -111,10 +113,63 @@ namespace RiddleMeThis.Controllers
             }
         }
 
+        [HttpPost("AtualizarQuizzesFeitos")]
+        public async Task<IActionResult> AtualizarQuizzesFeitos([FromBody] Usuario usuario)
+        {
+            if (usuario == null || usuario.id <= 0)
+            {
+                return BadRequest("Usuário inválido.");
+            }
+
+            using (var conn = new MySqlConnection(_connectionString))
+            {
+                await conn.OpenAsync();
+
+                // Verifica se o usuário existe
+                using (var command = conn.CreateCommand())
+                {
+                    command.CommandText = "SELECT COUNT(*) FROM usuario WHERE id = @id;";
+                    command.Parameters.AddWithValue("@id", usuario.id);
+
+                    var exists = Convert.ToInt32(await command.ExecuteScalarAsync());
+                    if (exists == 0)
+                    {
+                        return NotFound("Usuário não encontrado.");
+                    }
+                }
+
+                // Atualiza a contagem de quizzes feitos
+                using (var command = conn.CreateCommand())
+                {
+                    command.CommandText = "UPDATE usuario SET quizzes_feitos = quizzes_feitos + 1 WHERE id = @id;";
+                    command.Parameters.AddWithValue("@id", usuario.id);
+                    await command.ExecuteNonQueryAsync();
+                }
+            }
+
+            return Ok("Contagem de quizzes atualizada com sucesso.");
+        }
+
+        [HttpGet("ObterContagemQuizzesFeitos")]
+        public async Task<IActionResult> ObterContagemQuizzesFeitos(int usuarioId)
+        {
+            using (var conn = new MySqlConnection(_connectionString))
+            {
+                await conn.OpenAsync();
+
+                using (var command = conn.CreateCommand())
+                {
+                    command.CommandText = "SELECT quizzes_feitos FROM usuario WHERE id = @id;";
+                    command.Parameters.AddWithValue("@id", usuarioId);
+
+                    var result = await command.ExecuteScalarAsync();
+                    return Ok(result ?? 0); // Retorna 0 se o usuário não existir
+                }
+            }
+        }
+
+
+
 
     }//funcaoprincipal
 }//namespace
-
-
-
-

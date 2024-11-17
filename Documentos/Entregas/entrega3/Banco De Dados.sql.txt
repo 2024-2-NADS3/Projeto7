@@ -1,0 +1,37 @@
+create database quiz;
+use quiz;
+
+Create Table usuario(
+    id INT primary key auto_increment,
+    nome varchar(100) unique,
+    quizzes_feitos INT DEFAULT 0
+);
+
+Create Table quizzes(
+    id_quiz int primary key auto_increment,
+    titulo varchar(255),
+    descricao TEXT,
+    dificuldade enum("1", "2", "3","4", "5", "6") not null,
+    pontuacao_quiz int not null,
+    imagen text
+);
+
+Create Table perguntas(					    id_perguntas int primary key auto_increment,
+    id_quiz int,
+    pergunta varchar(255),
+    foreign key (id_quiz) references quizzes(id_quiz),
+    resposta boolean,
+    num_pergunta enum("1","2","3","4") NULL,
+    cor_botao varchar(7) default "#ffffff"
+);
+
+
+
+
+
+
+
+
+
+
+

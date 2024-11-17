@@ -9,12 +9,12 @@ namespace RiddleMeThis.Models
 
         [Required]
         [MaxLength(255)]
-        public string perguntas { get; set; }
+        public string? perguntas { get; set; }
 
         [Required]
         public Boolean respostas { get; set; }
 
-        public Quiz Quiz { get; set; }
+        public Quiz? Quiz { get; set; }
     }
 }
 
